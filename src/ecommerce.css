@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color:#fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: "Popins",sans-serif;
+}
+
+.commerce{
+    width: 1500px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.commerce__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 40px;
+    padding: 25px;
+
+
+
+}
+
+.commerce__box{
+    width: 300px;
+    /* height: 500px; */
+    background-color: #f9f8fc;
+    border-radius: 6px;
+}
+
+.img__container{
+    width: 100%;
+    height: 250px;
+}
+
+.product__img{
+    width: 100%;
+    height: 250px;
+}
+
+.details__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.btn-addTo{
+    background-color: #525CEB;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-addTo:hover{
+    transition: all 0.5s;
+    background-color: #4CB9E7;
+}
+
+.product__details{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:7px;
+}
+.product__title{
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.product__category{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.product__para{
+    font-size: 18px;
+    word-spacing: 4px;
+    line-height: 1.3;
+    margin-top: 12px;
+}
+
+.inr__price{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.load{
+    text-align: center;    
+}
+.crt{
+    display: flex;
+    /* margin: 50px 0; */
+    gap: 10px;
+    align-items: center;
+    background-color: #f9f8fc;
+    border-bottom: 2px solid #fff;
+
+    width: 380px;
+}
+
+.addcrt__title{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.addcrt__img{
+    width: 100px;
+    height: 100px;
+}
+
+.btn-qty{
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.remove{
+    font-size: 15px;
+    border: 2px solid red;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    width: 70px;
+    height: 38px;
+    border-radius:7px;
+  
+}
+
+span{
+    font-size: 16px;
+}
+
+.head{
+    text-align: center;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+    background-color: #f9f8fc;
+    padding: 24px;
+}
+
+.shop__title{
+    background-color: #525CEB;
+    width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+@media (max-width:900px){
+    .commerce{
+        justify-content: center;
+    }
+    .commerce__container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .commerce__box{
+        width: 400px;
+    }
+    .crt{
+        width: 420px;
+    }
+}
+
+
+
+ @media (max-width:350px){
+    .commerce{
+        justify-content: center;
+    }
+    .commerce__container{
+        grid-template-columns: 1fr;
+    }
+    .crt{
+        width: 460px;
+    }
+} 
+
+
+form{
+    width: 500px;
+    /* height: 550px; */
+    border:3px solid #525CEB;
+    margin:130px auto;
+    border-radius: 12px;
+    padding: 24px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+input{
+    height: 40px;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 6px;
+}
+input::placeholder{
+    font-size: 16px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.btn-lgn{
+    height: 40px;
+    background-color: #525CEB;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 14px;
+    transition: all .3s;
+    border-radius: 7px;
+}
+
+.btn-lgn:hover{
+    background-color: #fff;
+    color: #525CEB;
+    border: 2px solid #525CEB;
+}
+
+
+
+@media (max-width:400px){
+    form{
+        width: 360px;
+    }
+} 

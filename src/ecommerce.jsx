@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
 import "./ecommerce.css";
 
-const initialData = [
-  {
-    "id": 14,
-    "title": "Classic High-Waisted Athletic Shorts",
-    "price": 43,
-    "description": "Stay comfortable and stylish with our Classic High-Waisted Athletic Shorts. Designed for optimal movement and versatility, these shorts are a must-have for your workout wardrobe. Featuring a figure-flattering high waist, breathable fabric, and a secure fit that ensures they stay in place during any activity, these shorts are perfect for the gym, running, or even just casual wear.",
-    "images": ["https://i.imgur.com/eGOUveI.jpeg", "https://i.imgur.com/UcsGO7E.jpeg", "https://i.imgur.com/NLn4e7S.jpeg"],
-    "creationAt": "2024-07-03T15:12:54.000Z", "updatedAt": "2024-07-03T15:12:54.000Z",
-    "category": {
-      "id": 1,
-      "name": "Clothes",
-      "image": "https://i.imgur.com/QkIa5tT.jpeg",
-      "creationAt": "2024-07-03T15:12:54.000Z",
-      "updatedAt": "2024-07-03T15:46:00.000Z"
-    }
-  }
-];
+// const initialData = [
+//   {
+//     "id": 14,
+//     "title": "Classic High-Waisted Athletic Shorts",
+//     "price": 43,
+//     "description": "Stay comfortable and stylish with our Classic High-Waisted Athletic Shorts. Designed for optimal movement and versatility, these shorts are a must-have for your workout wardrobe. Featuring a figure-flattering high waist, breathable fabric, and a secure fit that ensures they stay in place during any activity, these shorts are perfect for the gym, running, or even just casual wear.",
+//     "images": ["https://i.imgur.com/eGOUveI.jpeg", "https://i.imgur.com/UcsGO7E.jpeg", "https://i.imgur.com/NLn4e7S.jpeg"],
+//     "creationAt": "2024-07-03T15:12:54.000Z", "updatedAt": "2024-07-03T15:12:54.000Z",
+//     "category": {
+//       "id": 1,
+//       "name": "Clothes",
+//       "image": "https://i.imgur.com/QkIa5tT.jpeg",
+//       "creationAt": "2024-07-03T15:12:54.000Z",
+//       "updatedAt": "2024-07-03T15:46:00.000Z"
+//     }
+//   }
+// ];
 
 export default function Ecommerce() {
   const [productData, setProductData] = useState([]);

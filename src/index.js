@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Ecommerce from "./ecommerce";
 import Login from "./login";
 function App() {
   return (
     <div>
-      {/* <Ecommerce /> */}
       <Login/>
     </div>
   );
